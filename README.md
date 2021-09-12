@@ -13,6 +13,10 @@ Some sources present videos on Microsoft Stream in embedded inside PDF files. Th
 - Executing `./nedownload.sh [.pdf FILE PATH]`will download all ms stream videos linked in the PDF, in the original encoding. This is generally faster and less resource intensive but lead to larger file sizes for the videos.
 - The history of downloaded videos is stored in `downloaded.txt`. These videos are ignored when downloading. Modify this file as you please.
 
+## Credits
+
+This is a fork. Credit to the original developers of github.com/snobu/destreamer. See their README below.
+
 <hr/>
 
 <a href="https://github.com/snobu/destreamer/actions">

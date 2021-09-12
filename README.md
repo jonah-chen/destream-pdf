@@ -1,3 +1,20 @@
+# Destream PDF Files
+
+Some sources present videos on Microsoft Stream in embedded inside PDF files. This contains some simple code that allows you to download all their videos with one command.
+
+## Installation Instructions
+
+1. Clone this repository `git clone https://github.com/jonah-chen/destream-pdf`.
+2. Ensure the prerequisites are installed (shown below) then run `npm install` and `npm run build`.
+
+## Usage
+
+- Executing `./download.sh [.pdf FILE PATH]` will download all ms stream videos linked in the PDF, and re-encode them with h.265/hvec.
+- Executing `./nedownload.sh [.pdf FILE PATH]`will download all ms stream videos linked in the PDF, in the original encoding. This is generally faster and less resource intensive but lead to larger file sizes for the videos.
+- The history of downloaded videos is stored in `downloaded.txt`. These videos are ignored when downloading. Modify this file as you please.
+
+<hr/>
+
 <a href="https://github.com/snobu/destreamer/actions">
   <img src="https://github.com/snobu/destreamer/workflows/Node%20CI/badge.svg" alt="CI build status" />
 </a>
